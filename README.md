@@ -4,12 +4,17 @@ Welcome to your complete, production-ready Business Starter Kit! This kit transf
 
 ## ⚡ One-Command Installation
 
+### Super Short (Copy & Paste):
+```bash
+curl -fsSL https://raw.githubusercontent.com/Abinash-Gope/claude-business-starter-kit/main/install.sh | bash
+```
+
+### Alternative:
 ```bash
 bash <(curl -sSL https://raw.githubusercontent.com/Abinash-Gope/claude-business-starter-kit/main/install-business-starter-kit.sh)
 ```
 
-Or clone this repo:
-
+### Manual:
 ```bash
 git clone https://github.com/Abinash-Gope/claude-business-starter-kit.git
 cd claude-business-starter-kit
