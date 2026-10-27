@@ -7,6 +7,10 @@
 [![GitHub forks](https://img.shields.io/github/forks/Abinash-Gope/claude-business-starter-kit?style=social)](https://github.com/Abinash-Gope/claude-business-starter-kit/network/members)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
+[![GitHub stars](https://img.shields.io/github/stars/Abinash-Gope/claude-business-starter-kit?style=social)](https://github.com/Abinash-Gope/claude-business-starter-kit/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/Abinash-Gope/claude-business-starter-kit?style=social)](https://github.com/Abinash-Gope/claude-business-starter-kit/network/members)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 [![Install](https://img.shields.io/badge/Install-curl%20%7C%20bash-brightgreen.svg)](https://github.com/Abinash-Gope/claude-business-starter-kit)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
