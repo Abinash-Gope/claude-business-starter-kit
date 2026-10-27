@@ -2,6 +2,20 @@
 
 Welcome to your complete, production-ready Business Starter Kit! This kit transforms 26 core business creation tasks into structured, actionable playbooks, frameworks, and templates.
 
+## ⚡ One-Command Installation
+
+```bash
+bash <(curl -sSL https://raw.githubusercontent.com/Abinash-Gope/claude-business-starter-kit/main/install-business-starter-kit.sh)
+```
+
+Or clone this repo:
+
+```bash
+git clone https://github.com/Abinash-Gope/claude-business-starter-kit.git
+cd claude-business-starter-kit
+bash install-business-starter-kit.sh
+```
+
 ---
 
 ## 📌 Master Task Checklist & Navigation

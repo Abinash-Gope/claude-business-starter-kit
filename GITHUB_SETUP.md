@@ -3,13 +3,13 @@
 ## One-Command Installation
 
 ```bash
-bash <(curl -sSL https://raw.githubusercontent.com/your-username/claude-business-starter-kit/main/install-business-starter-kit.sh)
+bash <(curl -sSL https://raw.githubusercontent.com/Abinash-Gope/claude-business-starter-kit/main/install-business-starter-kit.sh)
 ```
 
 Or clone and run locally:
 
 ```bash
-git clone https://github.com/your-username/claude-business-starter-kit.git
+git clone https://github.com/Abinash-Gope/claude-business-starter-kit.git
 cd claude-business-starter-kit
 bash install-business-starter-kit.sh
 ```
@@ -22,6 +22,8 @@ bash install-business-starter-kit.sh
 claude-business-starter-kit/
 ├── install-business-starter-kit.sh     # One-command installer
 ├── README.md                            # Master navigation & checklist
+├── .github/
+│   └── INSTALL.md                       # Installation documentation
 ├── 01_strategy/
 │   ├── 01_niche_research.md
 │   ├── 02_competitor_analysis.md
@@ -125,5 +127,5 @@ Inspired by the Claude Business Starter Kit concept.
 
 ## 📞 Need Help?
 
-- Open a [GitHub Issue](https://github.com/your-username/claude-business-starter-kit/issues)
-- Check the [CLAUDE.md](CLAUDE.md) for operational guidelines
+- Open a [GitHub Issue](https://github.com/Abinash-Gope/claude-business-starter-kit/issues)
+- Check the [.github/INSTALL.md](.github/INSTALL.md) for installation help

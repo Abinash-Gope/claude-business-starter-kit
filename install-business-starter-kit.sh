@@ -6,8 +6,16 @@ set -e
 
 echo "🚀 Installing Claude Business Starter Kit..."
 
-# Base directory
-BASE_DIR="C:\Code\Main Project\Building App"
+# Detect OS and set appropriate path
+if [[ "$OSTYPE" == "msys" || "$OSTYPE" == "win32" ]]; then
+    BASE_DIR="$HOME/Claude-Business-Starter-Kit"
+elif [[ "$OSTYPE" == "linux-gnu"* ]]; then
+    BASE_DIR="$HOME/Claude-Business-Starter-Kit"
+elif [[ "$OSTYPE" == "darwin"* ]]; then
+    BASE_DIR="$HOME/Claude-Business-Starter-Kit"
+else
+    BASE_DIR="./Claude-Business-Starter-Kit"
+fi
 
 # Create directory structure
 echo "📁 Creating directory structure..."
@@ -448,6 +456,13 @@ PRICING_EOF
 echo ""
 echo "🎉 Business Starter Kit installed successfully!"
 echo ""
-echo "📂 Location: C:\Code\Main Project\Building App"
+echo "📂 Location: $BASE_DIR"
 echo "📖 Open README.md for the master task checklist."
-echo "🛠️ Run: code . to start working in the kit."
+echo "🛠️ Run: code $BASE_DIR to start working in the kit."
+
+# Open in browser or editor if possible
+if command -v xdg-open >/dev/null 2>&1; then
+    xdg-open "$BASE_DIR/README.md" 2>/dev/null || true
+elif command -v open >/dev/null 2>&1; then
+    open "$BASE_DIR/README.md" 2>/dev/null || true
+fi
