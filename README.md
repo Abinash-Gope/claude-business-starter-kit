@@ -1,31 +1,75 @@
 # 🚀 Claude Business Starter Kit
 
-> **The complete playbook for building a profitable business from scratch.**  
-> 26 proven frameworks • 6 strategic modules • One command install
+> **The complete playbook & AI Agent Skill for building a profitable business from scratch.**  
+> 26 proven frameworks • 6 strategic modules • Native Claude Code & Agent Skill support
 
 [![GitHub stars](https://img.shields.io/github/stars/Abinash-Gope/claude-business-starter-kit?style=social)](https://github.com/Abinash-Gope/claude-business-starter-kit/stargazers)
 [![GitHub forks](https://img.shields.io/github/forks/Abinash-Gope/claude-business-starter-kit?style=social)](https://github.com/Abinash-Gope/claude-business-starter-kit/network/members)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-
+[![Skill: Claude Code](https://img.shields.io/badge/Skill-Claude%20Code%20%7C%20Agent-purple.svg)](https://github.com/Abinash-Gope/claude-business-starter-kit)
 [![Install](https://img.shields.io/badge/Install-curl%20%7C%20bash-brightgreen.svg)](https://github.com/Abinash-Gope/claude-business-starter-kit)
 
 ---
 
 ## ⚡ Quick Install
 
-### **Super Fast (One Line)**
+### **1. Install as a Claude Code Skill (Recommended)**
+Install directly into your global Claude Code skills (`~/.claude/skills/`) and enable the `/business` slash command:
+
+**macOS / Linux / WSL:**
 ```bash
 curl -fsSL https://raw.githubusercontent.com/Abinash-Gope/claude-business-starter-kit/main/install.sh | bash
 ```
 
-### **Alternative Methods**
-```bash
-# Using bash process substitution
-bash <(curl -sSL https://raw.githubusercontent.com/Abinash-Gope/claude-business-starter-kit/main/install-business-starter-kit.sh)
-
-# Windows PowerShell
-iex (New-Object Net.WebClient).DownloadString('https://raw.githubusercontent.com/Abinash-Gope/claude-business-starter-kit/main/install-business-starter-kit.sh')
+**Windows (PowerShell):**
+```powershell
+irm https://raw.githubusercontent.com/Abinash-Gope/claude-business-starter-kit/main/install.ps1 | iex
 ```
+
+Or install into your **current project only**:
+```bash
+curl -fsSL https://raw.githubusercontent.com/Abinash-Gope/claude-business-starter-kit/main/install.sh | bash -s -- --project
+```
+
+### **2. Manual Git Install**
+```bash
+git clone https://github.com/Abinash-Gope/claude-business-starter-kit.git ~/.claude/skills/claude-business-starter-kit
+```
+
+### **3. Standalone Playbooks Folder**
+If you just want the raw markdown guides in `~/Claude-Business-Starter-Kit`:
+```bash
+curl -fsSL https://raw.githubusercontent.com/Abinash-Gope/claude-business-starter-kit/main/install.sh | bash -s -- --standalone
+```
+
+---
+
+## 🤖 How to Use with Claude Code
+
+Once installed, start Claude Code in your terminal:
+
+```bash
+claude
+```
+
+You can now use the slash command or ask any business question in natural language:
+
+### **Using the Slash Command**
+```
+/business
+/business strategy
+/business outreach
+/business pricing
+```
+
+### **Natural Language Prompts**
+- *"Help me find and validate a profitable niche for a B2B AI consultancy"*
+- *"Draft a 4-step cold email campaign for reaching out to marketing directors"*
+- *"Design a 3-tier Good-Better-Best pricing model for my subscription product"*
+- *"Give me discovery call questions and objection battlecards for 'your price is too high'"*
+- *"Audit my landing page structure against high-converting UX frameworks"*
+
+Claude will automatically index [`SKILL.md`](file:///c:/Code/Code%20Skills/claude-business-starter-skill/claude-business-starter-kit/SKILL.md), select the exact framework from the 26 playbooks, and generate tailored, production-ready deliverables.
 
 ---
 
@@ -35,14 +79,14 @@ Transform 26 critical business tasks into actionable systems:
 
 | Phase | Focus Area | Playbooks |
 |-------|-----------|-----------|
-| **Strategy** | Market positioning, offers, pricing | 5 guides |
-| **Marketing** | Website, funnel, content, ads | 5 guides |
-| **Outreach** | Prospecting, cold email, proposals | 5 guides |
-| **Sales** | Scripts, objections, follow-ups | 4 guides |
-| **Operations** | CRM, onboarding, automation | 4 guides |
-| **Analytics** | Tracking, optimization, QA | 3 guides |
+| **1. Strategy** | Market positioning, offers, pricing | [5 guides](file:///c:/Code/Code%20Skills/claude-business-starter-skill/claude-business-starter-kit/01_strategy/) |
+| **2. Marketing** | Website, funnel, content, ads | [5 guides](file:///c:/Code/Code%20Skills/claude-business-starter-skill/claude-business-starter-kit/02_web_and_marketing/) |
+| **3. Outreach** | Prospecting, cold email, proposals | [5 guides](file:///c:/Code/Code%20Skills/claude-business-starter-skill/claude-business-starter-kit/03_lead_gen_and_outreach/) |
+| **4. Sales** | Scripts, objections, follow-ups | [4 guides](file:///c:/Code/Code%20Skills/claude-business-starter-skill/claude-business-starter-kit/04_sales_execution/) |
+| **5. Operations** | CRM, onboarding, automation | [4 guides](file:///c:/Code/Code%20Skills/claude-business-starter-skill/claude-business-starter-kit/05_operations_and_retention/) |
+| **6. Analytics** | Tracking, optimization, QA | [3 guides](file:///c:/Code/Code%20Skills/claude-business-starter-skill/claude-business-starter-kit/06_analytics_and_qa/) |
 
-**Total: 26 complete frameworks**
+**Total: 26 complete frameworks + 1 master AI Skill file (`SKILL.md`)**
 
 ---
 
@@ -73,127 +117,67 @@ Week 9-10: ████▓▒░  Operations & Scale
 
 ---
 
-## 🚀 Start Here
-
-### **New Business? Start with Strategy**
-```bash
-# Read these first
-01_strategy/01_niche_research.md
-01_strategy/03_ideal_customer_profiles.md
-01_strategy/04_offer_design.md
-01_strategy/05_pricing_strategy.md
-```
-
-### **Already Have an Idea? Jump to Marketing**
-```bash
-# Build your presence
-02_web_and_marketing/01_website_blueprint.md
-02_web_and_marketing/05_sales_funnel_architecture.md
-03_lead_gen_and_outreach/02_lead_generation_system.md
-```
-
----
-
 ## 📂 Module Overview
 
-### **📊 01_strategy/** - Foundation
+### **📊 01_strategy/** — Foundation
 Market research, positioning, and business model design
-- Validate your niche with data
-- Analyze competitors strategically
-- Define your ideal customer profile
-- Design irresistible offers
-- Price for maximum profit
+- [01_niche_research.md](file:///c:/Code/Code%20Skills/claude-business-starter-skill/claude-business-starter-kit/01_strategy/01_niche_research.md): Validate your niche with data
+- [02_competitor_analysis.md](file:///c:/Code/Code%20Skills/claude-business-starter-skill/claude-business-starter-kit/01_strategy/02_competitor_analysis.md): Analyze competitors strategically
+- [03_ideal_customer_profiles.md](file:///c:/Code/Code%20Skills/claude-business-starter-skill/claude-business-starter-kit/01_strategy/03_ideal_customer_profiles.md): Define your ideal customer profile (ICP)
+- [04_offer_design.md](file:///c:/Code/Code%20Skills/claude-business-starter-skill/claude-business-starter-kit/01_strategy/04_offer_design.md): Design irresistible Grand Slam offers
+- [05_pricing_strategy.md](file:///c:/Code/Code%20Skills/claude-business-starter-skill/claude-business-starter-kit/01_strategy/05_pricing_strategy.md): Value-based pricing & tiers
 
-### **🌐 02_web_and_marketing/** - Acquisition
+### **🌐 02_web_and_marketing/** — Acquisition
 Build assets that attract and convert customers
-- Website architecture blueprint
-- High-converting landing pages
-- 30-day content calendar
-- Ad creative frameworks
-- Complete sales funnel blueprint
+- [01_website_blueprint.md](file:///c:/Code/Code%20Skills/claude-business-starter-skill/claude-business-starter-kit/02_web_and_marketing/01_website_blueprint.md): 8-section homepage wireframe
+- [02_landing_page_framework.md](file:///c:/Code/Code%20Skills/claude-business-starter-skill/claude-business-starter-kit/02_web_and_marketing/02_landing_page_framework.md): High-converting landing pages
+- [03_marketing_content_calendar.md](file:///c:/Code/Code%20Skills/claude-business-starter-skill/claude-business-starter-kit/02_web_and_marketing/03_marketing_content_calendar.md): 3-pillar content engine
+- [04_ad_creatives_playbook.md](file:///c:/Code/Code%20Skills/claude-business-starter-skill/claude-business-starter-kit/02_web_and_marketing/04_ad_creatives_playbook.md): High-converting ad hooks & copy
+- [05_sales_funnel_architecture.md](file:///c:/Code/Code%20Skills/claude-business-starter-skill/claude-business-starter-kit/02_web_and_marketing/05_sales_funnel_architecture.md): Complete sales funnel blueprint
 
-### **📨 03_lead_gen_and_outreach/** - Pipeline
+### **📨 03_lead_gen_and_outreach/** — Pipeline
 Systematic lead generation and prospecting
-- Prospect sourcing guides
-- Lead generation systems
-- 5-stage cold email sequences
-- Personalization playbook
-- Sales proposal templates
+- [01_prospect_sourcing_guide.md](file:///c:/Code/Code%20Skills/claude-business-starter-skill/claude-business-starter-kit/03_lead_gen_and_outreach/01_prospect_sourcing_guide.md): Prospect sourcing channels & list hygiene
+- [02_lead_generation_system.md](file:///c:/Code/Code%20Skills/claude-business-starter-skill/claude-business-starter-kit/03_lead_gen_and_outreach/02_lead_generation_system.md): Lead magnets & capture mechanics
+- [03_cold_email_sequences.md](file:///c:/Code/Code%20Skills/claude-business-starter-skill/claude-business-starter-kit/03_lead_gen_and_outreach/03_cold_email_sequences.md): 4-step cold outreach campaigns
+- [04_personalization_playbook.md](file:///c:/Code/Code%20Skills/claude-business-starter-skill/claude-business-starter-kit/03_lead_gen_and_outreach/04_personalization_playbook.md): 1-to-1 personalization triggers
+- [05_sales_proposal_template.md](file:///c:/Code/Code%20Skills/claude-business-starter-skill/claude-business-starter-kit/03_lead_gen_and_outreach/05_sales_proposal_template.md): High-closing proposals & scope agreements
 
-### **💬 04_sales_execution/** - Revenue
+### **💬 04_sales_execution/** — Revenue
 Close deals consistently
-- SPIN selling scripts
-- Objection handling battlecards
-- Multi-touch follow-up sequences
-- Case study templates
+- [01_sales_call_scripts.md](file:///c:/Code/Code%20Skills/claude-business-starter-skill/claude-business-starter-kit/04_sales_execution/01_sales_call_scripts.md): Discovery, demo, and closing scripts
+- [02_objection_handling_matrix.md](file:///c:/Code/Code%20Skills/claude-business-starter-skill/claude-business-starter-kit/04_sales_execution/02_objection_handling_matrix.md): Battlecards for price, timing, and trust objections
+- [03_follow_up_sequences.md](file:///c:/Code/Code%20Skills/claude-business-starter-skill/claude-business-starter-kit/04_sales_execution/03_follow_up_sequences.md): Multi-channel follow-up cadence
+- [04_case_study_template.md](file:///c:/Code/Code%20Skills/claude-business-starter-skill/claude-business-starter-kit/04_sales_execution/04_case_study_template.md): Challenge-Solution-Result proof assets
 
-### **⚙️ 05_operations_and_retention/** - Scale
+### **⚙️ 05_operations_and_retention/** — Scale
 Automate and retain customers
-- CRM automation setups
-- Client onboarding processes
-- Workflow automation blueprints
-- Customer retention playbooks
+- [01_crm_automation_setup.md](file:///c:/Code/Code%20Skills/claude-business-starter-skill/claude-business-starter-kit/05_operations_and_retention/01_crm_automation_setup.md): CRM pipeline stages & triggers
+- [02_client_onboarding_process.md](file:///c:/Code/Code%20Skills/claude-business-starter-skill/claude-business-starter-kit/05_operations_and_retention/02_client_onboarding_process.md): First-30-days onboarding roadmap
+- [03_workflow_automation.md](file:///c:/Code/Code%20Skills/claude-business-starter-skill/claude-business-starter-kit/05_operations_and_retention/03_workflow_automation.md): Zapier/Make automation recipes
+- [04_customer_retention_playbook.md](file:///c:/Code/Code%20Skills/claude-business-starter-skill/claude-business-starter-kit/05_operations_and_retention/04_customer_retention_playbook.md): Churn prevention & QBR cadences
 
-### **📈 06_analytics_and_qa/** - Optimize
+### **📈 06_analytics_and_qa/** — Optimize
 Track, improve, and prevent mistakes
-- Performance dashboards
-- Conversion rate optimization
-- Quality assurance checklists
+- [01_performance_tracking_dashboard.md](file:///c:/Code/Code%20Skills/claude-business-starter-skill/claude-business-starter-kit/06_analytics_and_qa/01_performance_tracking_dashboard.md): CAC, LTV, and pipeline metrics
+- [02_cro_optimization_guide.md](file:///c:/Code/Code%20Skills/claude-business-starter-skill/claude-business-starter-kit/06_analytics_and_qa/02_cro_optimization_guide.md): Conversion rate optimization audits
+- [03_qa_and_error_proofing.md](file:///c:/Code/Code%20Skills/claude-business-starter-skill/claude-business-starter-kit/06_analytics_and_qa/03_qa_and_error_proofing.md): 50-point pre-launch verification checklist
 
 ---
 
 ## ✨ Features
 
-- ✅ **Production-Ready**: Battle-tested frameworks used by 7-figure businesses
+- 🤖 **Native Agent Skill**: Contains a standard [`SKILL.md`](file:///c:/Code/Code%20Skills/claude-business-starter-skill/claude-business-starter-kit/SKILL.md) and `/business` command for Claude Code, Antigravity, and AI agents
+- ✅ **Production-Ready**: Battle-tested frameworks used by high-growth startups
 - ✅ **Actionable**: Every guide includes templates, checklists, and scripts
-- ✅ **Modular**: Start anywhere based on your needs
-- ✅ **Cross-Platform**: Works on Windows, macOS, Linux
-- ✅ **No Setup**: One command, instant access
-
----
-
-## 🛠️ Usage Examples
-
-### Find Your Niche
-```bash
-cat 01_strategy/01_niche_research.md
-```
-*Use the scoring model to validate profitable niches*
-
-### Build a Sales Funnel
-```bash
-cat 02_web_and_marketing/05_sales_funnel_architecture.md
-```
-*Map your complete funnel from traffic to retention*
-
-### Write Cold Emails
-```bash
-cat 03_lead_gen_and_outreach/03_cold_email_sequences.md
-```
-*Copy-paste 5-stage outreach sequences*
-
-### Handle Objections
-```bash
-cat 04_sales_execution/02_objection_handling_matrix.md
-```
-*Battlecards for price, time, authority, trust objections*
-
----
-
-## 📊 Stats
-
-```
-26 playbooks
-6 modules
-150+ templates
-∞ potential revenue
-```
+- ✅ **Modular**: Start anywhere based on your current business stage
+- ✅ **Cross-Platform**: Works on macOS, Linux, and Windows
 
 ---
 
 ## 🤝 Contributing
 
-Found an improvement? Have feedback? 
+Found an improvement or have feedback? 
 - Open an [Issue](https://github.com/Abinash-Gope/claude-business-starter-kit/issues)
 - Submit a [Pull Request](https://github.com/Abinash-Gope/claude-business-starter-kit/pulls)
 
@@ -201,16 +185,10 @@ Found an improvement? Have feedback?
 
 ## 📄 License
 
-MIT License - Use freely for personal or commercial projects
+MIT License — Use freely for personal or commercial projects.
 
 ---
 
 ## 🙏 Star This Repo
 
-If this kit helped you build your business, please star ⭐ the repo!
-
----
-
-**Built with ❤️ for entrepreneurs who want to build businesses faster**
-
-*Start with `01_strategy/01_niche_research.md` → That's where all businesses begin*
+If this skill helps you build or scale your business, please star ⭐ the repository!

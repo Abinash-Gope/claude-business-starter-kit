@@ -1,75 +1,83 @@
-# Installation Guide
+# Installation Guide — Claude Business Starter Kit
 
-## Quick Install (One Command)
+The **Claude Business Starter Kit** can be installed as an AI Agent Skill for **Claude Code** (and compatible agents), or as a standalone folder of markdown playbooks.
 
-The fastest way to get the Claude Business Starter Kit:
+---
+
+## 🚀 Option 1: Install as a Claude Code Skill (Recommended)
+
+### **Global Installation (Available in all your projects)**
+Installs to `~/.claude/skills/claude-business-starter-kit` and activates the `/business` slash command in `~/.claude/commands/`:
+
+**macOS / Linux / WSL:**
+```bash
+curl -fsSL https://raw.githubusercontent.com/Abinash-Gope/claude-business-starter-kit/main/install.sh | bash
+```
+
+**Windows (PowerShell):**
+```powershell
+irm https://raw.githubusercontent.com/Abinash-Gope/claude-business-starter-kit/main/install.ps1 | iex
+```
+
+### **Project-Level Installation (Current workspace only)**
+Installs directly into `.claude/skills/claude-business-starter-kit` in your current working directory:
 
 ```bash
-bash <(curl -sSL https://raw.githubusercontent.com/Abinash-Gope/claude-business-starter-kit/main/install-business-starter-kit.sh)
+curl -fsSL https://raw.githubusercontent.com/Abinash-Gope/claude-business-starter-kit/main/install.sh | bash -s -- --project
 ```
 
-## Manual Install
+---
+
+## 🛠️ Option 2: Manual Installation
 
 ```bash
-# Clone the repository
-git clone https://github.com/Abinash-Gope/claude-business-starter-kit.git
-cd claude-business-starter-kit
+# Clone directly into Claude's global skills directory
+git clone https://github.com/Abinash-Gope/claude-business-starter-kit.git ~/.claude/skills/claude-business-starter-kit
 
-# Run the installer
-bash install-business-starter-kit.sh
-
-# Or copy files manually
-cp -r * /path/to/your/workspace/
+# Copy the /business slash command
+mkdir -p ~/.claude/commands
+cp ~/.claude/skills/claude-business-starter-kit/.claude/commands/business.md ~/.claude/commands/business.md
 ```
 
-## What's Installed?
+---
 
-After installation, you'll have:
+## 📁 Option 3: Standalone Playbooks Folder
 
-```
-Claude-Business-Starter-Kit/
-├── README.md                    # Master checklist & navigation
-├── 01_strategy/                 # 5 playbooks (niche, competition, ICP, offers, pricing)
-├── 02_web_and_marketing/        # 5 playbooks (website, landing page, content, ads, funnel)
-├── 03_lead_gen_and_outreach/    # 5 playbooks (prospecting, leads, cold email, personalization, proposals)
-├── 04_sales_execution/          # 4 playbooks (scripts, objections, follow-ups, case studies)
-├── 05_operations_and_retention/ # 4 playbooks (CRM, onboarding, automation, retention)
-└── 06_analytics_and_qa/         # 3 playbooks (metrics, CRO, QA checklists)
-```
+If you just want the raw markdown guides in `~/Claude-Business-Starter-Kit`:
 
-## Getting Started
-
-1. Open `README.md` for the master task checklist
-2. Start with `01_strategy/01_niche_research.md` to validate your business idea
-3. Follow the modules in order
-
-## Requirements
-
-- Bash shell (Linux/macOS/Git Bash on Windows)
-- Git (optional, for cloning)
-- Text editor (VS Code recommended)
-
-## Troubleshooting
-
-**Windows Users**: Use Git Bash or WSL
 ```bash
-# Using Git Bash
-bash install-business-starter-kit.sh
-
-# Or using PowerShell (download manually)
-curl -L -o install.sh https://raw.githubusercontent.com/Abinash-Gope/claude-business-starter-kit/main/install-business-starter-kit.sh
-bash install.sh
+curl -fsSL https://raw.githubusercontent.com/Abinash-Gope/claude-business-starter-kit/main/install.sh | bash -s -- --standalone
 ```
 
-**Permission Denied**:
-```bash
-chmod +x install-business-starter-kit.sh
-./install-business-starter-kit.sh
-```
+---
 
-## Uninstall
+## 💡 How to Use with Claude Code
 
-Simply delete the installed folder:
+1. Start Claude Code in any project directory:
+   ```bash
+   claude
+   ```
+2. Type `/business` or ask any business question:
+   ```
+   /business
+   /business strategy
+   "Help me design my SaaS pricing tiers and discount strategy"
+   "Write a 4-step cold outreach email sequence for e-commerce brands"
+   ```
+
+Claude will automatically consult the relevant playbook and generate actionable copy, frameworks, and checklists.
+
+---
+
+## 🗑️ Uninstalling
+
+To remove the skill completely:
+
 ```bash
+# Remove global skill
+rm -rf ~/.claude/skills/claude-business-starter-kit
+rm -f ~/.claude/commands/business.md
+
+# Remove standalone folder (if used)
 rm -rf ~/Claude-Business-Starter-Kit
 ```
