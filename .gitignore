@@ -1,0 +1,32 @@
+# Private / Internal Files (Not for users)
+# These files contain sensitive info or are for development only
+
+# Original source files
+Claude Business Starter Kit.txt
+
+# Development / Setup docs
+GITHUB_SETUP.md
+setup.md
+install-business-starter-kit-min.sh
+
+# Internal dev rel files (keep private)
+.github/DEV_REL_PLAN.md
+.github/SOCIAL_POSTS.md
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.temp
