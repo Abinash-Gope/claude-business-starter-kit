@@ -4,49 +4,32 @@ The **Claude Business Starter Kit** can be installed as an AI Agent Skill for **
 
 ---
 
-## 🚀 Option 1: Install as a Claude Code Skill (Recommended)
+## 🚀 Option 1: Global Installation (Recommended)
 
-### **Global Installation (Available in all your projects)**
-Installs to `~/.claude/skills/claude-business-starter-kit` and activates the `/business` slash command in `~/.claude/commands/`:
-
-**macOS / Linux / WSL:**
-```bash
-curl -fsSL https://raw.githubusercontent.com/Abinash-Gope/claude-business-starter-kit/main/install.sh | bash
-```
-
-**Windows (PowerShell):**
-```powershell
-irm https://raw.githubusercontent.com/Abinash-Gope/claude-business-starter-kit/main/install.ps1 | iex
-```
-
-### **Project-Level Installation (Current workspace only)**
-Installs directly into `.claude/skills/claude-business-starter-kit` in your current working directory:
+Clone directly into your global Claude Code skills directory:
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/Abinash-Gope/claude-business-starter-kit/main/install.sh | bash -s -- --project
+git clone https://github.com/Abinash-Gope/claude-business-starter-kit.git ~/.claude/skills/claude-business-starter-kit
 ```
 
 ---
 
-## 🛠️ Option 2: Manual Installation
+## 🛠️ Option 2: Project-Level Installation
+
+Install into your current project workspace only:
 
 ```bash
-# Clone directly into Claude's global skills directory
-git clone https://github.com/Abinash-Gope/claude-business-starter-kit.git ~/.claude/skills/claude-business-starter-kit
-
-# Copy the /business slash command
-mkdir -p ~/.claude/commands
-cp ~/.claude/skills/claude-business-starter-kit/.claude/commands/business.md ~/.claude/commands/business.md
+git clone https://github.com/Abinash-Gope/claude-business-starter-kit.git .claude/skills/claude-business-starter-kit
 ```
 
 ---
 
 ## 📁 Option 3: Standalone Playbooks Folder
 
-If you just want the raw markdown guides in `~/Claude-Business-Starter-Kit`:
+If you just want the raw markdown guides:
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/Abinash-Gope/claude-business-starter-kit/main/install.sh | bash -s -- --standalone
+git clone https://github.com/Abinash-Gope/claude-business-starter-kit.git ~/Claude-Business-Starter-Kit
 ```
 
 ---
@@ -71,13 +54,6 @@ Claude will automatically consult the relevant playbook and generate actionable 
 
 ## 🗑️ Uninstalling
 
-To remove the skill completely:
-
-```bash
-# Remove global skill
-rm -rf ~/.claude/skills/claude-business-starter-kit
-rm -f ~/.claude/commands/business.md
-
-# Remove standalone folder (if used)
-rm -rf ~/Claude-Business-Starter-Kit
-```
+To remove the skill completely, delete the installed skill folder:
+- **macOS / Linux**: Delete the `claude-business-starter-kit` folder inside `~/.claude/skills/`
+- **Windows**: Delete the `claude-business-starter-kit` folder inside `%USERPROFILE%\.claude\skills\`

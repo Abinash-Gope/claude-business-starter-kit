@@ -7,39 +7,31 @@
 [![GitHub forks](https://img.shields.io/github/forks/Abinash-Gope/claude-business-starter-kit?style=social)](https://github.com/Abinash-Gope/claude-business-starter-kit/network/members)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Skill: Claude Code](https://img.shields.io/badge/Skill-Claude%20Code%20%7C%20Agent-purple.svg)](https://github.com/Abinash-Gope/claude-business-starter-kit)
-[![Install](https://img.shields.io/badge/Install-curl%20%7C%20bash-brightgreen.svg)](https://github.com/Abinash-Gope/claude-business-starter-kit)
+[![Install](https://img.shields.io/badge/Install-git%20clone-brightgreen.svg)](https://github.com/Abinash-Gope/claude-business-starter-kit)
 
 ---
 
 ## ⚡ Quick Install
 
-### **1. Install as a Claude Code Skill (Recommended)**
-Install directly into your global Claude Code skills (`~/.claude/skills/`) and enable the `/business` slash command:
+### **1. Global Installation (Recommended)**
+Clone directly into your global Claude Code skills directory:
 
-**macOS / Linux / WSL:**
-```bash
-curl -fsSL https://raw.githubusercontent.com/Abinash-Gope/claude-business-starter-kit/main/install.sh | bash
-```
-
-**Windows (PowerShell):**
-```powershell
-irm https://raw.githubusercontent.com/Abinash-Gope/claude-business-starter-kit/main/install.ps1 | iex
-```
-
-Or install into your **current project only**:
-```bash
-curl -fsSL https://raw.githubusercontent.com/Abinash-Gope/claude-business-starter-kit/main/install.sh | bash -s -- --project
-```
-
-### **2. Manual Git Install**
 ```bash
 git clone https://github.com/Abinash-Gope/claude-business-starter-kit.git ~/.claude/skills/claude-business-starter-kit
 ```
 
-### **3. Standalone Playbooks Folder**
-If you just want the raw markdown guides in `~/Claude-Business-Starter-Kit`:
+### **2. Project-Level Installation**
+Install into your current project workspace only:
+
 ```bash
-curl -fsSL https://raw.githubusercontent.com/Abinash-Gope/claude-business-starter-kit/main/install.sh | bash -s -- --standalone
+git clone https://github.com/Abinash-Gope/claude-business-starter-kit.git .claude/skills/claude-business-starter-kit
+```
+
+### **3. Standalone Playbooks Folder**
+If you prefer standalone markdown playbooks:
+
+```bash
+git clone https://github.com/Abinash-Gope/claude-business-starter-kit.git ~/Claude-Business-Starter-Kit
 ```
 
 ---
