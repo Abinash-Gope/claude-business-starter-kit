@@ -1,6 +1,19 @@
 ---
 name: claude-business-starter-kit
 description: Comprehensive 26-framework business playbook for AI coding agents (Claude Code, Antigravity, Cursor). Guides users through market niche research, competitor analysis, ICP definitions, offer design, pricing models, landing page architecture, sales funnels, cold email campaigns, sales call scripts, objection handling, CRM automation, client onboarding, and conversion optimization. Trigger this skill whenever the user asks for business strategy, startup validation, SaaS pricing, cold outreach copy, sales objection handling, or funnel optimization.
+license: MIT
+compatibility:
+  os:
+    - windows
+    - linux
+    - macos
+platforms:
+  - windows
+  - linux
+  - macos
+metadata:
+  author: Abinash Gope
+  version: "1.0.0"
 ---
 
 # 🚀 Claude Business Starter Kit
