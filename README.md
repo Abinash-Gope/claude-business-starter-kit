@@ -7,6 +7,7 @@
 [![GitHub forks](https://img.shields.io/github/forks/Abinash-Gope/claude-business-starter-kit?style=social)](https://github.com/Abinash-Gope/claude-business-starter-kit/network/members)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Skill: Claude Code](https://img.shields.io/badge/Skill-Claude%20Code%20%7C%20Agent-purple.svg)](https://github.com/Abinash-Gope/claude-business-starter-kit)
+[![Agensi](https://img.shields.io/badge/Agensi-claude--business--starter--kit-1f6feb?logo=rocket&logoColor=white)](https://www.agensi.io/skills/claude-business-starter-kit)
 [![Install](https://img.shields.io/badge/Install-git%20clone-brightgreen.svg)](https://github.com/Abinash-Gope/claude-business-starter-kit)
 
 ---
@@ -178,6 +179,14 @@ Found an improvement or have feedback?
 ## 📄 License
 
 MIT License — Use freely for personal or commercial projects.
+
+## 💖 Support the Creator / Get it on Agensi
+
+If this skill helps you build or scale your business, you can support my work directly on **Agensi**:
+
+<a href="https://www.agensi.io/skills/claude-business-starter-kit" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:8px;padding:8px 14px;border-radius:9999px;background:#1f6feb;color:#fff;font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;font-size:14px;text-decoration:none;line-height:1;border:1px solid #1a5fcc"><span style="font-weight:600">claude business starter kit</span> <span style="opacity:.85">on Agensi</span></a>
+
+[![Support on Agensi](https://img.shields.io/badge/Support_on-Agensi-1f6feb?style=for-the-badge&logo=rocket&logoColor=white)](https://www.agensi.io/skills/claude-business-starter-kit)
 
 ---
 
