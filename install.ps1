@@ -78,10 +78,13 @@ if ($CommandDir) {
     if (-not (Test-Path $CommandDir)) {
         New-Item -ItemType Directory -Path $CommandDir -Force | Out-Null
     }
-    $SrcCmd = Join-Path $SkillDir ".claude\commands\business.md"
-    if (Test-Path $SrcCmd) {
-        Copy-Item -Path $SrcCmd -Destination (Join-Path $CommandDir "business.md") -Force
-        Write-Host "[+] Installed slash command: $CommandDir\business.md" -ForegroundColor Green
+    $SrcCmdDir = Join-Path $SkillDir ".claude\commands"
+    if (Test-Path $SrcCmdDir) {
+        $Files = Get-ChildItem -Path $SrcCmdDir -Filter *.md
+        foreach ($File in $Files) {
+            Copy-Item -Path $File.FullName -Destination (Join-Path $CommandDir $File.Name) -Force
+        }
+        Write-Host "[+] Installed $($Files.Count) slash commands to $CommandDir" -ForegroundColor Green
     }
 }
 

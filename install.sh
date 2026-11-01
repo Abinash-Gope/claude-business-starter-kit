@@ -83,9 +83,9 @@ fi
 # Install Slash Command if in Claude mode
 if [ -n "$COMMAND_DIR" ]; then
     mkdir -p "$COMMAND_DIR"
-    if [ -f "$SKILL_DIR/.claude/commands/business.md" ]; then
-        cp "$SKILL_DIR/.claude/commands/business.md" "$COMMAND_DIR/business.md"
-        echo -e "⚡ Installed slash command: ${GREEN}$COMMAND_DIR/business.md${NC}"
+    if [ -d "$SKILL_DIR/.claude/commands" ]; then
+        cp "$SKILL_DIR/.claude/commands/"*.md "$COMMAND_DIR/"
+        echo -e "⚡ Installed ${GREEN}$(ls "$SKILL_DIR/.claude/commands/"*.md | wc -l)${NC} slash commands to ${GREEN}$COMMAND_DIR${NC}"
     fi
 fi
 
