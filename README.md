@@ -168,6 +168,20 @@ Track, improve, and prevent mistakes
 
 ---
 
+## 🧠 Using with Other AI Models & IDEs
+
+While the slash commands are optimized for **Claude Code**, the 26 frameworks are universal and work with any AI model or code assistant:
+
+### 1. Popular AI Chat Interfaces (ChatGPT, Gemini, Claude.ai)
+- **Copy-Paste**: Paste the content of any playbook (e.g., `04_offer_design.md`) into your chat: *"Using the 'Offer Design' framework provided below, help me restructure my pricing."*
+- **Upload**: Upload the relevant Markdown files to your AI chat.
+
+### 2. AI-Powered IDEs (Cursor, VS Code + Copilot/Cline)
+- **Context Injection**: Add the kit folders (`01_strategy/` to `06_analytics_and_qa/`) to your IDE's context.
+- **Prompting**: *"Reference the files in the 03_lead_gen_and_outreach folder to write a 4-step cold email sequence."*
+
+---
+
 ## 🤝 Contributing
 
 Found an improvement or have feedback? 
